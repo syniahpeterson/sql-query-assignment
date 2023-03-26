@@ -1,1 +1,1 @@
-SELECT student.first_name as student_first_name, student.last_name as student_last_name, instructor.first_name as advisor_first_name, instructor.last_name as advisor_last_name from student join instructor where student.advisor_id = instructor.instructor_id;
+SELECT student.first_name AS student_first_name, student.last_name AS student_last_name, instructor.first_name AS advisor_first_name, instructor.last_name AS advisor_last_name FROM student JOIN instructor WHERE student.advisor_id = instructor.instructor_id;
