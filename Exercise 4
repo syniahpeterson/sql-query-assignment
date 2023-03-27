@@ -1,0 +1,1 @@
+SELECT instructor.instructor_id AS Instructor_id, instructor.first_name AS Instructor_first_name, instructor.last_name AS Instructor_last_name FROM instructor WHERE instructor.instructor_id not in (SELECT instructor.instructor_id FROM instructor INNER JOIN student WHERE student.advisor_id = instructor.instructor_id);
